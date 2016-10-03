@@ -1,0 +1,30 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "A node app to crawl a website and produce a sitemap of content and links",
+  "engines": {
+    "node": "6.7.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "npm-run-all test:*",
+    "test:eslint": "eslint *.js --ignore-pattern node_modules",
+    "test:unit": "JASMINE_CONFIG_PATH=tests/jasmine.json ./node_modules/jasmine/bin/jasmine.js",
+    "test:coverage": "JASMINE_CONFIG_PATH=tests/jasmine.json istanbul cover ./node_modules/jasmine/bin/jasmine.js"
+  },
+  "author": "Richard Leap <apergy.dev@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "3.6.1",
+    "istanbul": "0.4.5",
+    "jasmine": "2.5.2",
+    "npm-run-all": "3.1.0",
+    "rewire": "2.5.2"
+  },
+  "dependencies": {
+    "async": "2.0.1",
+    "cheerio": "0.22.0",
+    "lodash": "4.16.2",
+    "request": "2.75.0"
+  }
+}
