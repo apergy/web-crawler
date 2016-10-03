@@ -1,4 +1,4 @@
-# Web Crawler
+# Web Crawler [![Build Status](https://travis-ci.org/apergy/web-crawler.svg?branch=master)](https://travis-ci.org/apergy/web-crawler)
 A simple node app to do a quick crawl through a website to produce a sitemap.
 
 ## Requirements
